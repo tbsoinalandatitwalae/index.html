@@ -155,7 +155,21 @@ float: left;
 }
 
 
+ .blink {
+            animation: blinker 1.5s linear infinite;
+            color: #FF6700;
+            font-family: sans-serif;
+			
+			text-align: center;
+			font-size: 32px;
 
+
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
 </style>
 </head>
 <body id="myPage">
@@ -195,7 +209,7 @@ float: left;
 <a href="#contact">संपर्क</a></li> 
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
  </div>	
-<h1>कार्यकारिणी</h1>  
+  <p class="blink">कार्यकारिणी</p>
 
 
 
