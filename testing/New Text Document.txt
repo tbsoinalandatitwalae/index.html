@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>नालंदा</title>
+<title>दि.बु.सो नालंदा</title>
 <!--<link rel="stylesheet" href="style.css"> -->
 <link rel="icon" type="image/x-icon" href="logo2.jpg">
 <meta charset="UTF-8">
@@ -143,6 +143,38 @@ footer {
   }
 }
 
+<!--  this is menu test-->
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+<!--  above is menu test-->
 </style>
 </head>
 <body id="myPage">
@@ -189,6 +221,25 @@ footer {
     <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
 </div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+    <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+    <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+    <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+    <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  
+</ul>
 <!--
 <h1>दि सोसायटी </h1>
 भारतीय <br/>
