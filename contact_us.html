@@ -53,10 +53,27 @@
 <!--<a href="#contact">संपर्क</a></li> -->
 <a href="#contact"><i class="fa fa-envelope"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>	
- <p class="blink">धम्मदान</p>
- <p style="text-align:center;"><img src="upi.png"  width="200" height="280" align="center"/></p>
+ </div>	   
+<p class="blink">संपर्क</p>
+<form action="/action_page.php" style="max-width:500px;margin:auto">
   
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <button type="submit" class="btn">Register</button>
+</form>
 
 
 
@@ -76,11 +93,13 @@
 </footer>
 </div>
 <div class="tops">
-    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">    
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div> 
   </div>
+  
 <script>
 window.onscroll = function() {myFunction()};
 
