@@ -182,3 +182,14 @@ span.small {
             }
         }
 
+ .img_avtar {
+  border-radius: 50%;
+   padding-left: 4em; 
+    padding-right: 4em; 
+}
+
+#image_div{ 
+	width:25%;
+    height: 35%;
+    float:left;
+}
