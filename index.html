@@ -1,290 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>दि.बु.सो. नालंदा</title>
-<link rel="icon" type="image/x-icon" href="logo3.jpg">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="index.css">
+<html>
+<head> <title>दि.बु.सो. नालंदा</title>
+<link rel="icon" type="image/x-icon" href="logo2-removebg-preview-removebg-preview.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>  <!-- -below css code added for login pop up form -->
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
 </head>
-<body id="myPage">
+<body>
 
-<div class="top_header"> 
-	<div  id="hp">
-	<img src="bu_dr.png"  width="200" height="126" style="border:1px solid blue;"/>
-	</div>
-	<div  id="hp2">
-	<img src="logo2-removebg-preview-removebg-preview.png"  width="180" height="113"/>
-	</div>
-	<big><b>THE BUDDHIST SOCIETY OF INDIA</b></big><br/>
-<b> (भारतीय बौद्ध महासभा)</b><br/> <!-- दि बुद्धिस्ट सोसायटी ऑफ इंडिया -->
-संस्थापक : बोधिसत्त्व, डॉ. बाबासाहेब आंबेडकर<br/>
-<span  align="center" SPAN STYLE="font-size:12px">संस्था नोंदणी क्र.३२२७, विश्‍वस्त नोंदणी क्र. एफ-९८२  (मुंबई) </span><br/>
-<!-- <span  align="center" SPAN STYLE="font-size:12px">केंद्रीय कार्यालय: डॉ. आंबेडकर भवन, गोकुळदास पास्ता रोड,दादर (पूर्व) - ४०० ०१४</span><br/> <hr width="600px;"/>  -->
-<span  align="center" SPAN STYLE="font-size:15px"><b>शाखा : नालंदा टिटवाळा (पू.)</b></span>
-
-</div>
-
-<div class="navbar" id="myHeader">
-<a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i></a>
-<a href="news_and_photo.html">बातम्या व क्षणचित्रे</a></li>   
-<a href="comity.html">कार्यकारिणी</a></li>   
-<a href="member_registration.html">सदस्य नोंदणी</a></li>    
-  <div class="dropdown">
-    <button class="dropbtn">नालंदा शाखेविषयी    <i class="fa fa-caret-down"></i>
-    </button>	
-    <div class="dropdown-content">
-      <a href="plan_and_project.html">योजना व प्रकल्प</a>
-      <a href="report_and_resolution.html">अहवाल व ठराव</a>
-      <a href="documents_of_nalanda.html">कागदपत्रे</a>
-    </div>
-	</div> 
+	<!----header design--->
+	<header>
 	
-  <div class="dropdown">
-    <button class="dropbtn">संस्थेविषयी    <i class="fa fa-caret-down"></i>
-    </button>	
-<div class="dropdown-content">
-      <a href="aim_and_objectives.html">ध्येय व उद्दिष्ट</a>
-      <a href="constitution_of_org.html">संस्थेचे संविधान</a>
-      <a href="documents_of_bsi.html">कागदपत्रे</a>
-    </div>	
-   </div>
-   <a href="dhammadaan.html">धम्मदान </a></li> 
-<!--<a href="#contact">संपर्क</a></li> -->
-<a href="contact_us.html"><i class="fa fa-envelope"></i></a>
- <a href="login.html"><i class="fa fa-fw fa-user"></i> </a>
-  <a href="search.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>	
-
-
-  <!-- Navbar on small screens 
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">कार्यकारिणी</a>
-    <a href="#work" class="w3-bar-item w3-button">क्षणचित्रे</a>
-    <a href="#pricing" class="w3-bar-item w3-button">नोटीस</a>
-    <a href="#पत्ता" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
-  </div> -->
-  
-  
-  
-<h3>सविनय जयभिम, </h3>
-<p>आम्ही <b>"भारतीय बौद्ध महासभेच्या"</b> अंतर्गत असणाऱ्या <b>"नालंदा" (टिटवाळा पूर्व) </b>शाखेच्या वतीने आपले हार्दिक स्वागत करीत आहोत. </p>
-
-<p>तमाम भारतीय बौद्धांची एकमेव मातृसंस्था <b>"दि बुद्धिस्ट सोसायटी ऑफ इंडिया"</b> अर्थात <b>"भारतीय बौद्ध महासभा"</b>. या संस्थेचे संस्थापक अध्यक्ष बोधिसत्व, डॉ. बाबासाहेब आंबेडकर होते. बाबासाहेबानंतर संस्थेचे द्वितीय अध्यक्ष सूर्यपुत्र भय्यासाहेब आंबेडकर होते. भय्यासाहेबांनंतर आदरणीय महाउपासिका मीराताई आंबेडकर या संस्थेच्या ४५ वर्ष अध्यक्षा राहिल्या. <br/>
-आता <b>सदर संस्थेच्या राष्ट्रीय संरक्षक आद. महाउपासिका मीराताई आंबेडकर आहेत.
-ट्रस्टी चेअरमन आद. डॉ. हरीश रावलीया, ट्रस्टी राष्ट्रीय अध्यक्ष आद. चंद्रबोधी पाटील, राष्ट्रीय कार्याध्यक्ष आद. भीमराव आंबेडकर आहेत.</b></p>
-<p>सदर वेबसाईटच्या माध्यमातून नालंदा शाखेच्या पदाधिकारी, कार्यप्रणाली, ध्येय व उद्धिष्ट तसेच राबविलेले निरनिराळ्या उपक्रमांबाबत इतंभूत अद्यावत माहिती मिळेल. 
-आपण आम्हाला आपल्या सूचना ई-मेल, व्हाट्सअँप, मोबाईल अँप अथवा दिलेल्या पत्यावर पोस्टाने देखील पाठवू शकता. आपण आमच्या सोबत फेसबुक,ट्विटर द्वारे देखील संपर्कात राहू शकता.</p>
-<p>आपण आम्हास सामाजिक जाणिवेतून शाखेला आर्थिकरित्या धम्मदान देखील क्यू आर कोड किंवा दिलेल्या बँक डिटेल च्या माध्यमातून पाठवू शकता.
-<p>आपण दि बुद्धिस्ट सोसायटी ऑफ इंडिया अर्थात भारतीय बौद्ध महासभेच्या सदस्य होऊ इच्छित असाल तर आपण "सदस्य नोंदणी" फॉर्म व वार्षिक मात्र २०/- रुपये भरून सदस्य होऊ शकता.</p></br></br></br>
-<hr/>
-<p><i class='fa fa-address-card'></i>  २०१, रवींद्र रिजेन्सी हौ. सो., बल्याणी रोड, टिटवाळा पूर्व, कल्याण, ठाणे - ४२१ ६०५ </p>  
-<i class="fa fa-envelope"></i> </b>tbsoinalandatitwalae@gmail.com</br>
-<i class='fa fa-phone'></i> २४१८५५९७</br></br></br></br></br></br>
-<script type="text/javascript">
-function validateForm() {
-if (isEmpty(document.getElementById('data_2').value.trim())) {
-alert('NAME is required!');
-return false;
-}
-if (isEmpty(document.getElementById('data_4').value.trim())) {
-alert('EMAIL is required!');
-return false;
-}
-if (!validateEmail(document.getElementById('data_4').value.trim())) {
-alert('EMAIL must be a valid email address!');
-return false;
-}
-return true;
-}
-function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-function validateEmail(email) {
-var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-return isEmpty(email) || re.test(email);
-}
-</script>
-
-	<div style="float: left;"class="left_div;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.33394593959!2d73.19465962523952!3d19.296843378360254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79121191f39f3%3A0x137b03ff0b786e41!2sBuddha%20Vihar!5e0!3m2!1sen!2sin!4v1672575203896!5m2!1sen!2sin" width="1340" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-<!--
-<div style="float: right;" class= "right_div;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.33394593959!2d73.19465962523952!3d19.296843378360254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79121191f39f3%3A0x137b03ff0b786e41!2sBuddha%20Vihar!5e0!3m2!1sen!2sin!4v1672575203896!5m2!1sen!2sin" width="733" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
--->
-
-
-
-<div class="bottom_header"> 
-<footer class="w3-padding-32 w3-black w3-center w3-margin-top"><br/>
-  <h5>येथे आमच्याशी कनेक्ट व्हा...</h5>
-  <div class="w3-xlarge w3-padding-16">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</footer>
-</div>
-
-<div class="tops">
-    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <!--<span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   -->
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-	</div> 
+	<a class="navbar-brand" href="/">
+      <div class="logo-image">
+            <img src="download4-removebg-preview.png" width="100px" height="100px" class="img-fluid">
+      </div>
+</a>
 	
- 
-</div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<script>
-window.onscroll = function() {myFunction()};
+	
+		<!--<a href="#" class="logo">Cod<span>e</span>r.</a>  -->
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+		<ul class="navlist">
+		<li><a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i></a></li>
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
+		<div class="bx bx-menu" id="menu-icon">
+			
+		</div>
+	</header>
+
+	<!----home section design--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">THE BUDDHIST SOCIETY OF INDIA</span>
+				<!--<span class="two">संस्थापक : बोधिसत्त्व, डॉ. बाबासाहेब आंबेडकर</span>
+				<span  align="center" SPAN STYLE="font-size:12px">केंद्रीय कार्यालय: डॉ. आंबेडकर भवन, गोकुळदास पास्ता रोड,दादर (पूर्व) - ४०० ०१४</span><br/>-->
+			</div>
+			<h1> भारतीय बौद्ध महासभा</h1>
+			<h3>संस्थापक : बोधिसत्त्व, डॉ. बाबासाहेब आंबेडकर</h3><p>संस्था नोंदणी क्र.३२२७, विश्‍वस्त नोंदणी क्र. एफ-९८२  (मुंबई) <br/>
+			<h4>शाखा : <span> नालंदा टिटवाळा (पू.)</span></h4> </p>
+			
+			
+			<div class="button">
+				<a href="#" class="btn">अधिक जाणून घ्या</a>
+				<a href="#" class="btn2"><span><i class='bx bx-play'></i></span>आमचे काम पहा</a>
+			</div>
+		</div>
+	</section>
+
+	<!----about section design--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/about.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2>बुद्धिस्ट सोसायटी ऑफ <span>इंडिया </span></h2>
+			<h4>4 मे 1954 रोजी बुद्धिस्ट सोसायटी ऑफ इंडियाची स्थापना.</h4>
+			<p>
+भीमराव रामजी आंबेडकर (मराठी:डॊ. भीमराव रामजी आंबेडकर) (14 एप्रिल, 1891- 6 डिसेंबर 1956), जे बाबासाहेब या नावाने प्रसिद्ध होते, ते भारतीय राष्ट्रवादी, भारतीय राज्यघटनेचे शिल्पकार, अर्थशास्त्रज्ञ, न्यायशास्त्रज्ञ, पत्रकार, प्रकाशक, इतिहासकार होते. लेखक, वक्ता, राजकारणी आणि भारतातील तसेच परदेशातील लाखो लोकांचे धार्मिक नेते. तो 20 व्या शतकातील एक सत्य घटना होता. दलित बौद्ध चळवळीला प्रेरणा देणारे आणि अस्पृश्य (दलित) यांच्या विरुद्ध सामाजिक भेदभावाविरुद्ध मोहीम चालवणारे, महिला आणि कामगारांच्या हक्कांचे समर्थन करणारे समाजसुधारक अशी त्यांची भव्य भूमिका आहे. ते स्वतंत्र भारताचे पहिले कायदा मंत्री, भारतीय संविधानाचे प्रमुख शिल्पकार आणि भारतीय प्रजासत्ताकाचे संस्थापक होते.
+आंबेडकर हे प्रगल्भ विद्यार्थी होते, त्यांनी कोलंबिया विद्यापीठ आणि लंडन स्कूल ऑफ इकॉनॉमिक्स या दोन्हींमधून अर्थशास्त्रात डॉक्टरेट मिळवली आणि कायदा, अर्थशास्त्र आणि राज्यशास्त्रातील संशोधनासाठी विद्वान म्हणून नावलौकिक मिळवला. त्याच्या सुरुवातीच्या कारकिर्दीत ते अर्थशास्त्रज्ञ, प्राध्यापक आणि वकील होते. त्यांचे नंतरचे जीवन त्यांच्या राजकीय क्रियाकलापांनी चिन्हांकित केले; भारताच्या स्वातंत्र्यासाठी मोहीम आणि वाटाघाटी, जर्नल्स प्रकाशित करणे, दलितांसाठी राजकीय हक्क आणि सामाजिक स्वातंत्र्याची वकिली करणे आणि भारताच्या राज्याच्या स्थापनेत महत्त्वपूर्ण योगदान देणे यात त्यांचा सहभाग होता. 1956 मध्ये त्यांनी दलितांचे सामूहिक धर्मांतर सुरू करून बौद्ध धर्म स्वीकारला.
+
+1990 मध्ये, भारतरत्न हा भारताचा सर्वोच्च नागरी पुरस्कार आंबेडकरांना मरणोत्तर बहाल करण्यात आला. आंबेडकरांच्या वारशात लोकप्रिय संस्कृतीतील असंख्य स्मारके आणि चित्रणांचा समावेश आहे.
+
+धर्म माणसासाठी आहे, माणूस धर्मासाठी नाही, यावर त्यांचा ठाम विश्वास आहे. डॉ. बाबासाहेब आंबेडकरांना असा धर्म हवा होता जो मानवजातीतील आध्यात्मिक बंधुत्व ओळखेल, वैयक्तिक मानवाच्या प्रतिष्ठेला मान्यता देईल आणि वाढीच्या संधीवर त्याचा हक्क असेल. तो अशा धर्माचा शोध घेत होता जो प्रेम आणि करुणेची भूमिका ओळखतो, परंतु वैयक्तिक प्रतिष्ठेला धक्का देणारा पितृसत्ताक धर्माचा प्रचार करतो असे नाही. त्याला ही मूल्ये आणि बौद्ध धर्मात तर्कशुद्ध कृतीची प्रतिज्ञा आढळली जी तर्काने आणि नैतिक मूल्यांचा सार्वत्रिक संच आहे.</p>
+			<a href="#" class="btn">More About</a>
+		</div>
+	</section>
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2><span>My</span> Services</h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-mobile-alt' ></i>
+				</div>
+				<h3>Web Design</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-code-alt' ></i>
+				</div>
+				<h3>Web Development</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-edit-alt' ></i>
+				</div>
+				<h3>Creative Design</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!----portfolio section design--->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<p>Portfolio</p>
+			<h2><span>Latest</span> Project</h2>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="img/portfolio1.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/portfolio2.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/portfolio3.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/portfolio4.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/portfolio5.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/portfolio6.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 Best Design's updates for the top web design & development companies.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!----contact section design--->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact <span>Me!</span></h2>
+			<h4>If You Have Any Project In Your Mind.</h4>
+			<p>I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.</p>
+			<div class="list">
+				<li><a href="#">01646895741</a></li>
+				<li><a href="#">hello@gmail.com</a></li>
+				<li><a href="#">Like Share & Subscribe</a></li>
+			</div>
+
+			<div class="contact-icons">
+				<a href="#"><i class='bx bxl-facebook' ></i></a>
+				<a href="#"><i class='bx bxl-twitter' ></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-youtube' ></i></a>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="">
+				<input type="name" placeholder="Your Name" required>
+				<input type="email" placeholder="Your Email Address" required>
+				<input type="" placeholder="Your Mobile Number" required>
+				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
+	</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Tahmid Ahmed All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
