@@ -18,6 +18,46 @@
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.dropbtn {
+  background-color:#2a2a2a;
+  color:  #ccc;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2a2a2a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:  #ccc;   <!-- link 1 text color-->
+  
+  
+  font-size: 17px;
+	font-weight: 500;
+	margin: 0 25px;
+	transition: all .45s ease;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #yellow;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #yellow;}
+</style>
+
 </head>
 <body>
 
@@ -37,24 +77,36 @@
 		<li><a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i></a></li>
 			<li><a href="#about">मातृसंस्था</a></li>
 			<li><a href="#services">प्रकल्प</a></li>
+						
+			
 			<!--<li><a href="comity.html">कार्यकारिणी</a></li> 
 			<li><a href="member_registration.html">सदस्य नोंदणी</a></li>--> 
 			
 			
 			<!--<div class="tooltip">   -->
 
+			<li><a href="#portfolio">बातम्या</a></li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeIebp6x3Cz-VimMyCinL6S0EY-Zc-6mc8oZCebAeIoiJivJA/viewform?embedded=true">नोंदणी</a></li>
+			<div class="dropdown">
+  <button class="dropbtn">नालंदा बद्दल</button>
+  <div class="dropdown-content">
+    <a href="#">योजना व प्रकल्प</a>
+    <a href="#">अहवाल व ठराव</a>
+    <a href="#">कागदपत्रे</a>
+  </div>
+</div>
 			
 			
-			<li><a href="#portfolio"><i class="fa fa-picture-o" aria-hidden="true"></i></i></a></li>
+			<!--<li><a href="#portfolio"><i class="fa fa-picture-o" aria-hidden="true"></i></i></a></li> -->
 			<!--<span class="tooltiptext">बातम्या व क्षणचित्रे</span>                 
 			gps icon is here <i class="fa fa-map-marker" aria-hidden="true">-->
 			<!--</div> -->
 			
 			
-			
-			<a href="#contact"><i class="fa fa-envelope"></i></a>
- <a href="login.html"><i class="fa fa-fw fa-user"></i> </a>
-  <a href="search.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+			<li><a href="#contact">संपर्क</a></li>
+			<!--<a href="#contact"><i class="fa fa-envelope"></i></a> -->
+ <!-- <a href="login.html"><i class="fa fa-fw fa-user"></i> </a>
+  <a href="search.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>  --> 
 		</ul>
 
 		<div class="bx bx-menu" id="menu-icon">
@@ -251,6 +303,7 @@
 				<input type="" placeholder="Your Mobile Number" required>
 				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
 				<input type="submit" value="Send Message" class="submit" required>
+				<small><script type="text/javascript" src="https://www.100forms.com/js/FORMKEY:426LAD9HHU32/SEND:tbsoinalandatitwalae@gmail.com"></script></small></s></p>
 			</form>
 		</div>
 	</section>
