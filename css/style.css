@@ -94,6 +94,18 @@ section{
 	align-items: center;
 	justify-content: flex-start;
 }
+
+.home3{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/home2_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
 .slide{
 	margin-bottom: 20px;
 }
@@ -153,6 +165,36 @@ section{
 	line-height: 1.1;
 }
 .home2-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.home3-text h1{
+	font-size: var(--big-font);
+	font-weight: 700;
+	color: var(--text-color);
+	line-height: 1.1;
+	margin: 0 0 8px;
+}
+.home3-text h3{
+	color: var(--text-color);
+	margin: 0 0 5px;
+	font-size: 2rem;
+	font-weight: 200;
+	line-height: 1.1;
+}
+.home3-text p{
 	color: var(--second-color);
 	font-size: var(--p-font);
 	line-height: 1.8;
