@@ -83,6 +83,17 @@ section{
 	align-items: center;
 	justify-content: flex-start;
 }
+.home2{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/parliament-of-India.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
 .slide{
 	margin-bottom: 20px;
 }
@@ -124,6 +135,34 @@ section{
 	line-height: 1.8;
 	margin-bottom: 40px;
 }
+
+
+
+.home2-text h1{
+	font-size: var(--big-font);
+	font-weight: 700;
+	color: var(--text-color);
+	line-height: 1.1;
+	margin: 0 0 8px;
+}
+.home2-text h3{
+	color: var(--text-color);
+	margin: 0 0 5px;
+	font-size: 2rem;
+	font-weight: 200;
+	line-height: 1.1;
+}
+.home2-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 40px;
+}
+
+
+
+
+
 .button{
 	display: inline-flex;
 	align-items: center;
@@ -208,6 +247,9 @@ header.sticky{
 .services{
 	background: var(--second-bg-color);
 }
+.services2{
+	background: var(--second-bg-color);
+}
 .main-text{
 	text-align: center;
 }
@@ -227,6 +269,7 @@ header.sticky{
 	gap: 2.5rem;
 	margin-top: 5rem;
 }
+
 .box{
 	background: var(--bg-color);
 	padding: 35px 45px;
@@ -276,6 +319,15 @@ header.sticky{
 	gap: 2.5rem;
 	margin-top: 5rem;
 }
+
+.portfolio2-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 5rem;
+}
+
 .row{
 	position: relative;
 	overflow: hidden;
@@ -475,6 +527,13 @@ form textarea{
 	.home{
 		height: 87vh;
 	}
+	
+	.home2-text h3{
+		font-size: 2.5rem;
+	}
+	.home2{
+		height: 87vh;
+	}
 }
 
 @media (max-width: 920px){
@@ -540,4 +599,44 @@ form textarea{
     border-radius: 20%;
     overflow: hidden;
     margin-top: -6px;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
